@@ -16,7 +16,7 @@
         "    cmd /c mklink /j \"$dir\\platform-tools\" \"$(appdir adb $global)\\current\\platform-tools\" | out-null",
         "    attrib \"$(appdir adb $global)\\current\\platform-tools\" +R /L",
         "}",
-        "&\"$dir\\cmdline-tools\\bin\\sdkmanager.bat\" '--install' '\"cmdline-tools;latest\"'"
+        "&\"$dir\\cmdline-tools\\latest\\bin\\sdkmanager.bat\" '--install' '\"cmdline-tools;latest\"'"
     ],
     "env_add_path": "cmdline-tools\\bin",
     "env_set": {
