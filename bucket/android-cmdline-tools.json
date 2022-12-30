@@ -10,13 +10,6 @@
     "url": "https://dl.google.com/android/repository/commandlinetools-win-9123335_latest.zip",
     "hash": "8a90e6a3deb2fa13229b2e335efd07687dcc8a55a3c544da9f40b41404993e7d",
     "bin": [
-        "tools\\proguard\\bin\\proguard.bat",
-        "tools\\proguard\\bin\\proguardgui.bat",
-        "tools\\proguard\\bin\\retrace.bat",
-        "tools\\emulator.exe",
-        "tools\\emulator-check.exe",
-        "tools\\mksdcard.exe",
-        "tools\\monitor.bat"
     ],
     "post_install": [
         "if (Test-Path \"$(appdir adb $global)\") {",
@@ -25,10 +18,9 @@
         "}",
         "&\"$dir\\tools\\bin\\sdkmanager.bat\" '--install' '\"cmdline-tools;latest\"'"
     ],
-    "env_add_path": "tools\\bin",
+    "env_add_path": "cmdline-tools\\bin",
     "env_set": {
-        "ANDROID_HOME": "$dir",
-        "PROGUARD_HOME": "$dir\\tools\\proguard"
+        "ANDROID_HOME": "$dir"
     },
     "persist": [
         ".knownPackages",
