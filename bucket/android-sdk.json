@@ -18,7 +18,7 @@
         "}",
         "&\"$dir\\cmdline-tools\\latest\\bin\\sdkmanager.bat\" '--install' '\"cmdline-tools;latest\"'"
     ],
-    "env_add_path": "cmdline-tools\\bin",
+    "env_add_path": "cmdline-tools\\latest\\bin",
     "env_set": {
         "ANDROID_HOME": "$dir"
     },
